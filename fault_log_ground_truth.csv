@@ -1,0 +1,15 @@
+start,end,asset,fault_type,expected_signature
+2023-06-14 08:00,2023-07-20 12:00,Building A,"Leak (slow, growing)",Extra 0.3->1.6 m3/h; shows as rising night-time minimum flow (02:00-04:00) and small pressure decline
+2023-09-18 02:00,2023-09-19 16:00,Borehole 1,Pump outage,"BH1 flow=0, BH2 carries everything (its runtime per hour roughly doubles)"
+2023-11-05 06:00,2023-11-12 10:00,Building B,Clog / partial blockage (gradual),Flow falls to ~55% of normal over 7 days while pressure rises
+2024-02-09 14:00,2024-02-11 04:00,Building B,Leak (burst),+6.5 m3/h at all hours incl. night; pressure drops ~1.5-2 bar
+2024-03-10 00:00,2024-03-12 00:00,Treated turbidity sensor,Stuck sensor,"Flat 0.31 NTU, zero variance"
+2024-03-21 02:00,2024-03-21 11:00,All sensors,Logger/comms dropout,Missing values
+2024-05-06 00:00,2024-07-14 00:00,Filter,Clogging / ineffective backwash,"dp floor after backwash creeps 18->48 kPa, backwash interval shortens, treated turbidity breakthrough"
+2024-07-08 00:00,2024-07-15 00:00,Building C,Clog / valve partly closed (abrupt),"Flow steps down to 60% of normal, pressure rises"
+2024-09-01 00:00,2024-10-15 00:00,Distribution main,Leak (unmetered),+1.2 m3/h in treatment_outlet vs sum of three building meters
+2024-11-26 05:00,2024-11-28 11:00,Borehole 2,Pump outage,"BH2 flow=0, BH1 carries everything (its runtime per hour rises)"
+2025-01-12 00:00,2025-04-20 00:00,Borehole 2,Screen clogging / yield decline,"Runtime per m3 up, drawdown up to 2.2x, pumping capacity -45%, raw turbidity rising (sand); fixed by rehab on 2025-04-20"
+2025-03-03 00:00,2025-05-12 00:00,Building C,"Leak (small, constant)",+0.35 m3/h around the clock
+2025-10-21 00:00,2025-11-02 00:00,Building C,Leak,+0.9 m3/h around the clock
+random,random,Various,"Missing values (40 short gaps) and spikes (12 turbidity, 8 pressure)",Not individually logged
